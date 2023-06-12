@@ -1,8 +1,9 @@
 <li class="list-group-item d-flex justify-content-between align-items-center">
-  <div>
+  <div class="d-flex align-items-center">
     <input
       class="form-check-input me-1"
       type="checkbox"
+      style="min-width: 15px"
       [id]="id"
       [(ngModel)]="done"
       (change)="doneChangeHandler()"
