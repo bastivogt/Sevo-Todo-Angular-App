@@ -1,0 +1,24 @@
+<li class="list-group-item d-flex justify-content-between align-items-center">
+  <div>
+    <input
+      class="form-check-input me-1"
+      type="checkbox"
+      [id]="id"
+      [(ngModel)]="done"
+      (change)="doneChangeHandler()"
+    />
+    <label
+      class="form-check-label"
+      [htmlFor]="id"
+      [ngStyle]="
+        done
+          ? { 'text-decoration': 'line-through' }
+          : { 'text-decoration': 'none' }
+      "
+      >{{ title }}</label
+    >
+  </div>
+  <div>
+    <button class="btn btn-close" (click)="deleteClickHandler()"></button>
+  </div>
+</li>
