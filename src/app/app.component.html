@@ -10,11 +10,10 @@
   <br />
   <sevo-card
     [footer]="false"
-    [body]="false"
     title="Todos aktiv"
     *ngIf="todosActive.length > 0"
   >
-    <sevo-todo-list card-content>
+    <sevo-todo-list card-body>
       <sevo-todo
         *ngFor="let todo of todosActive"
         [id]="todo.id"
@@ -28,11 +27,10 @@
   <br />
   <sevo-card
     [footer]="false"
-    [body]="false"
     title="Todos erledigt"
     *ngIf="todosDone.length > 0"
   >
-    <sevo-todo-list card-content>
+    <sevo-todo-list card-body>
       <sevo-todo
         *ngFor="let todo of todosDone"
         [id]="todo.id"
